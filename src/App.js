@@ -1,5 +1,5 @@
 import './App.css';
-import GetApi from './redux/api/Api';
+import GetApi from './api/Api';
 
 GetApi();
 
