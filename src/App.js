@@ -1,4 +1,7 @@
 import './App.css';
+import GetApi from './api/Api';
+
+GetApi();
 
 function App() {
   return (
