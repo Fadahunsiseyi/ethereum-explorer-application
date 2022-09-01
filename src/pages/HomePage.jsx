@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import Hero from '../components/Hero';
 
 const HomePage = () => {
   const selector = useSelector((state) => state);
@@ -14,7 +15,7 @@ const HomePage = () => {
   }, [transactions]);
   return (
     <div>
-      HomePage
+      <Hero title={total.title} subtitle={total.subtitle} />
     </div>
   );
 };
