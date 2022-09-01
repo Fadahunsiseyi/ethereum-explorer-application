@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import Hero from '../components/Hero';
+import Order from '../components/Order';
 
 const HomePage = () => {
   const selector = useSelector((state) => state);
@@ -16,6 +17,7 @@ const HomePage = () => {
   return (
     <div>
       <Hero title={total.title} subtitle={total.subtitle} />
+      <Order />
     </div>
   );
 };

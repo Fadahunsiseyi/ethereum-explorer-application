@@ -1,0 +1,13 @@
+.order-container {
+    background-color: $dark-blue;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    h5 {
+        color: $white;
+        font-weight: bold;
+        margin: 0;
+        align-content: center;
+    }
+}
