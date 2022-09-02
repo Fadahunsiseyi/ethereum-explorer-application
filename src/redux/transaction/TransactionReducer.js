@@ -42,7 +42,6 @@ export const displayTransaction = ({ order }) => async (dispatch) => {
   try {
     const data = await GetApi({ order });
     dispatch({ type: TRANSACTION_SUCCESS, payload: data });
-    console.log(data);
     return data;
   } catch (error) {
     return dispatch(failedTransactions(error));

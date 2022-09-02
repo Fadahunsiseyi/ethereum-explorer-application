@@ -28,3 +28,9 @@
         }
     }
 }
+.transactions-container {
+    background-color: red;
+    display: grid;
+    padding: 0 !important;
+    grid-template-columns: 1fr 1fr;
+}

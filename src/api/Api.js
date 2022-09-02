@@ -5,7 +5,7 @@ const END_BLOCK = '27025780';
 const API_KEY = 'G7A3WNIB4ATIDHIJIVTYU76DY6PVYQYECC';
 
 export default function GetApi({ order }) {
-  const url = `${BASE_URL}?module=account&action=tokentx&contractaddress=${CONTRACT_ADDRESS}&address=${URL_ADDRESS}&page=1&offset=100&startblock=0&endblock=${END_BLOCK}&sort=${order}&apikey=${API_KEY}`;
+  const url = `${BASE_URL}?module=account&action=tokentx&contractaddress=${CONTRACT_ADDRESS}&address=${URL_ADDRESS}&page=1&offset=36&startblock=0&endblock=${END_BLOCK}&sort=${order}&apikey=${API_KEY}`;
   const getData = fetch(url)
     .then((res) => res.json().then((res) => {
       const { result } = res;
