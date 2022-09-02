@@ -5,8 +5,7 @@ import Order from '../components/Order';
 import TransactionDetail from '../components/TransactionDetail';
 
 const HomePage = () => {
-  const { TransactionReducer: transactions, SearchReducer: search } = useSelector((state) => state);
-  console.log(search);
+  const { TransactionReducer: transactions } = useSelector((state) => state);
   const [total, setTotal] = useState({ title: '', subtitle: '' });
   const [organizeTransactions, setOrganizeTransactions] = useState([]);
   useEffect(() => {

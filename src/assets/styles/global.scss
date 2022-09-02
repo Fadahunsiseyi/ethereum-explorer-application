@@ -8,21 +8,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700;900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    min-height: 100vh;
-    line-height: 1;
-    background-color: $dark-blue;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  line-height: 1;
+  background-color: $dark-blue;
 }
-

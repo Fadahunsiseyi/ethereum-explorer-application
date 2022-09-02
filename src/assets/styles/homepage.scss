@@ -1,31 +1,35 @@
 .hero-container {
-    background-color: $hero-bg;
+  background-color: $hero-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+
+  svg {
+    width: 25%;
+  }
+
+  .title-wrapper {
+    width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 4rem;
-    svg {
-        width: 25%;
+    color: $white;
+    gap: 10px;
+    margin-left: 10px;
+
+    h2 {
+      font-size: 1.8rem;
+      text-transform: uppercase;
     }
-    .title-wrapper {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $white;
-        gap: 10px;
-        margin-left: 10px;
-        h2 {
-            font-size: 1.8rem;
-            text-transform: uppercase;
-        }
-        h6 {
-            font-style: italic;
-            font-weight: 500;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-        }
+
+    h6 {
+      font-style: italic;
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
     }
+  }
 }
 // .transactions-container {
 //     display: grid;
