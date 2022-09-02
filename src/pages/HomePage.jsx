@@ -6,6 +6,7 @@ import TransactionDetail from '../components/TransactionDetail';
 
 const HomePage = () => {
   const { TransactionReducer: transactions, SearchReducer: search } = useSelector((state) => state);
+  console.log(search);
   const [total, setTotal] = useState({ title: '', subtitle: '' });
   const [organizeTransactions, setOrganizeTransactions] = useState([]);
   useEffect(() => {
@@ -23,13 +24,14 @@ const HomePage = () => {
       <Hero title={total.title} subtitle={total.subtitle} />
       <Order />
       <ul className="transactions-container">
-        {organizeTransactions.map((transaction) => (
+        {organizeTransactions.map((transaction, id) => (
           <TransactionDetail
             TransactionHash={transaction.hash}
             TransactionValue={transaction.value}
             BlockNumber={transaction.blockNumber}
             DestinationAddress={transaction.to}
-            key={transaction.hash}
+            // eslint-disable-next-line react/no-array-index-key
+            key={id}
             Data={transaction}
           />
         ))}
