@@ -37,10 +37,10 @@ export default function TransactionReducer(state = initial, action) {
   }
 }
 
-export const displayTransaction = () => async (dispatch) => {
+export const displayTransaction = ({ order }) => async (dispatch) => {
   dispatch(fetchingTransactions());
   try {
-    const data = await GetApi();
+    const data = await GetApi({ order });
     dispatch({ type: TRANSACTION_SUCCESS, payload: data });
     return data;
   } catch (error) {

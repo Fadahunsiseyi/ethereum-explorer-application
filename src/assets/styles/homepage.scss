@@ -1,0 +1,84 @@
+.hero-container {
+  background-color: $hero-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+
+  svg {
+    width: 25%;
+  }
+
+  .title-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+    gap: 10px;
+    margin-left: 10px;
+
+    h2 {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+
+    h6 {
+      font-style: italic;
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+// .transactions-container {
+//     display: grid;
+//     padding: 0 !important;
+//     grid-template-columns: repeat(2, 1fr);
+//     background: $dark-blue;
+//     width: 100% !important;
+//     border: 2px solid red;
+//     color: $white;
+//     .transaction-lists {
+//         text-align: end;
+//         padding: 0.75rem;
+//         border-radius: none;
+//         min-height: 300px;
+//         transition: 0.5s;
+//         cursor: pointer;
+//         width: 100% !important;
+//         &:hover {
+//             transform: scale(0.97);
+//         }
+//         &:nth-of-type(4n),
+//         &:nth-of-type(4n - 3) {
+//             background: $secondary;
+//         }
+//         .transaction-lists-wrapper {
+//             height: 100%;
+//             // display: flex;
+//             flex-direction: column;
+//             .arrow-right {
+//                 width: 100%;
+//                 margin-bottom: 1.25rem;
+//                 .circleRightIcon {
+//                     color: $white;
+//                     width: 1.5rem;
+//                     text-align: end !important;
+//                     margin-right: 0;
+//                 }
+//             }
+//             .details-container {
+//                 margin-top: 1.25rem;
+//                 justify-content: space-between;
+//                 h2 {
+//                     font-size: 2rem;
+//                 }
+//                 & > p {
+//                     margin-top: 1rem;
+//                     font-weight: 500;
+//                 }
+//             }
+//         }
+//     }
+// }

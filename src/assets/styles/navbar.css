@@ -1,0 +1,15 @@
+nav {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  background: transparent;
+  margin: 0;
+  align-items: center;
+  border: none;
+  outline: none;
+  width: 20px;
+}
