@@ -11,31 +11,31 @@ const TransactionDetail = ({
     navigate(`/transactions/${TransactionHash}`, { state: { ...Data } });
   };
   return (
-    <li className="card transaction-card p-3">
+    <li className="transaction-lists">
       <div
-        onKeyPress={handleNavigate}
         role="button"
         onClick={handleNavigate}
+        onKeyPress={handleNavigate}
         tabIndex={0}
-        className="text-white"
+        className="transaction-lists-wrapper"
       >
-        <div className="text-end mb-5 icon">
+        <div className="arrow-right">
           <ArrowCircleRightIcon />
         </div>
-        <div className="stats">
-          <h3 className="font-lato fw-bold text-end mt-5">
+        <div className="details-container">
+          <h2>
             Block
             {' '}
             {BlockNumber}
-          </h3>
-          <p className="text-end m-0">
+          </h2>
+          <p>
             ETH
             {' '}
             {parseInt(TransactionValue, 10).toLocaleString()}
             {' '}
             Value
           </p>
-          <p className="text-end m-0">
+          <p>
             Destination Address:
             {' '}
             {DestinationAddress}

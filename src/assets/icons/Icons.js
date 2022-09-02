@@ -40,7 +40,7 @@ export function ArrowCircleRightIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
+      className="circleRightIcon"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -59,7 +59,7 @@ export function ChevronLeftIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
+      className="chevIcon"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -74,7 +74,7 @@ export function SearchIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
+      className="searchIcon"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
