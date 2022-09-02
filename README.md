@@ -7,7 +7,7 @@
 
 ## Live Demo
 
-[Live demo]()
+[Live demo](https://leafy-brigadeiros-a6dd08.netlify.app)
 
 ## Built With
 
