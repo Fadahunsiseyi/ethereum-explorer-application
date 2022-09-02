@@ -21,12 +21,12 @@ const Order = () => {
   ];
 
   const handleChange = (e) => {
-    console.log(e, e.value);
     setOrder(e.value);
     if (e.value === 'asc') {
       dispatch(displayTransaction({ order: 'asc' }));
+    } if (e.value === 'desc') {
+      dispatch(displayTransaction({ order: 'desc' }));
     }
-    dispatch(displayTransaction({ order: 'desc' }));
   };
 
   return (
