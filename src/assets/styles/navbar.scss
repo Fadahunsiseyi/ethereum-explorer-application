@@ -1,0 +1,55 @@
+nav {
+  background-color: $nav-bg;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .chevBtn {
+    background: transparent;
+    margin: 0;
+    align-items: center;
+    border: none;
+    outline: none;
+    width: $svg-width;
+    color: $white;
+    cursor: pointer;
+  }
+
+  .search-input {
+    input {
+      background: transparent;
+      border: none;
+      text-align: center;
+      color: $white;
+      padding: 5px;
+      outline: none;
+
+      &::placeholder {
+        color: $white;
+        text-align: center;
+        font-style: italic;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  h3 {
+    color: $white;
+  }
+
+  .icons {
+    background: transparent;
+    color: $white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .cogIcon,
+    .micIcon {
+      height: 1.7rem;
+      width: 1.7rem;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.hero-container {
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.hero-container svg {
+  width: 25%;
+}
+
+.hero-container .title-wrapper {
+  border: 2px solid red;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 10px;
+}

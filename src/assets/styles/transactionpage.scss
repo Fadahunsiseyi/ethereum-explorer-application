@@ -1,0 +1,31 @@
+.transaction-page-lists {
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    padding: 0.99rem;
+    border-bottom: 1px solid $white;
+    transition: 0.8s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(0.97);
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .icon-wrapper {
+        width: 1.5rem !important;
+      }
+
+      @media only screen and (max-width: 568px) {
+        font-size: 0.87rem;
+      }
+    }
+  }
+}
